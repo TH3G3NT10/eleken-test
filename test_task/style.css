@@ -151,7 +151,7 @@ main .cats {
 
 main .cats a{
 	padding-bottom: 8px;
-	margin: 0 4%;
+	margin: 0 25px;
 	text-transform: uppercase;
 	text-decoration: none;
 	display: inline;
