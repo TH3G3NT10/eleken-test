@@ -118,11 +118,16 @@ header .mid .cart a {
 }
 
 header .cart a span {
-    padding: 18px 23px;
+    padding: 15px 20px;
     margin: 0 15px;
-    border: 2px solid blue;
     border-radius: 50%;
+	transition: .2s ease;
+	border: 2px solid white;
 }
+
+header .mid .cart a span:hover {
+	border: 2px solid #1274d3;
+	}
 
 header .mid .searchico {
 	background-image: url(http://www.newdesignfile.com/postpic/2012/12/search-icon-clip-art_249187.png);
@@ -157,7 +162,8 @@ main .cats a{
 	display: inline;
 	color: gray;
 	font-size: 12px;
-	font-weight: bold;	
+	font-weight: bold;
+	letter-spacing: 1px;
 }
 
 main .cats a:hover {
@@ -178,6 +184,7 @@ main .products .product {
 main .products .product .prodname{
 	font-family: 'Playfair Display', serif;
 	margin-top: 30px;
+	letter-spacing: 1px;
 }
 
 main .products .product .sale {
@@ -190,10 +197,11 @@ main .products .product .new-product {
 	position: absolute;
 	background-color: #1274d3;
 	border-radius: 12.5px;
-	top: 26px;
-	left: 41px;
-	line-height: 23px;
+	top: 27px;
+	left: 40px;
+	line-height: 26px;
     color: white;
+	font-size: 12px;
 }
 
 .loadmore {
@@ -212,6 +220,14 @@ main .products .product .new-product {
 	font-size: 12px;
 	font-weight: bold;
 	letter-spacing: 1px;
+	transition: .2s ease-in-out;
+	padding: 15px 25px;
+}
+
+.loadmore a:hover {
+    background-color: #1274d3;
+    color: white;
+    border-radius: 55px;
 }
 
 /* Subscription form */
@@ -246,15 +262,36 @@ main .products .product .new-product {
     border-radius: 25px;
 }
 
+#subscription .focused{
+    box-shadow: 0 0 20px 3px rgba(255, 255, 255, 0.92);
+}
+
 #subscription .form-group input {
 	background: none;
 	border: none;
+}
+
+#subscription .form-group input:focus {
+    outline: none;
 }
 
 #subscription .form-group button {
 	background: none;
 	border: none;
 }
+
+::-webkit-input-placeholder{
+	color:white;
+	}
+::-moz-placeholder{
+	color:white;
+	}
+:-moz-placeholder {
+	color:white;
+	}
+:-ms-input-placeholder{
+	color:white;
+	}
 
 /* footer */
 
