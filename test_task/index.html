@@ -18,6 +18,16 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 		<link href="https://fonts.googleapis.com/css?family=Lato|Playfair+Display" rel="stylesheet">
 		<link href="style.css" rel="stylesheet">
+		<script>
+		jQuery(function($){
+			$('#email-field').focusin(function(){
+				$('#form').addClass('focused');
+			});
+			$('#email-field').focusout(function(){
+				$('#form').removeClass('focused');
+			});
+		});
+		</script>
 	</head>
 	<body>
 		<header>
@@ -122,8 +132,8 @@
 				<p>subscribe</p>
 				<h1>Stay updated on news</h1>
 				<div class="form-group">
-				<form>
-					<input type="email" name="email" value="Your Email Address">
+				<form id="form">
+					<input id="email-field" type="email" name="email" placeholder="Your Email Address">
 					<button type="submit"><i class="glyphicon glyphicon-chevron-right"></i></button>
 				</form>
 				</div>
